@@ -38,6 +38,8 @@ var app = new Vue({
                 alert("Ingrese todos los campos nuevamente")
             }else if(this.cedula === 0 && this.nombre === 0 && this.horasTrab === 0  && this.cargo === 0) {
                 alert("Ingrese campos validos por favor")
+            } else if(this.horasTrab < 10 || this.horasTrab > 100) {
+                alert("El mínimos de horas trabajadas debe ser superior a 10 y máximo 100 ")
             }
         }
     }})
